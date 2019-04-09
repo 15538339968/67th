@@ -7,20 +7,20 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import Element from 'element-ui'
 import './styles/element-variables.scss'
 
-import '@/styles/index.scss' // global css
+import '@/styles/index.scss' // global css 全局CSS
 
 import App from './App'
 import store from './store'
 import router from './router'
 
-import i18n from './lang' // Internationalization
+import i18n from './lang' // Internationalization 国际化
 import './icons' // icon
 import './permission' // permission control
 import './utils/errorLog' // error log
 
-import * as filters from './filters' // global filters
+import * as filters from './filters' // global filters 全局过滤器
 
-import { mockXHR } from '../mock' // simulation data
+import { mockXHR } from '../mock' // simulation data 模拟数据
 
 // mock api in github pages site build
 if (process.env.NODE_ENV === 'production') { mockXHR() }
